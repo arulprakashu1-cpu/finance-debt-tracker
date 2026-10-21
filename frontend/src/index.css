@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Sora", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: #07110d;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d5c43;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #a16207, #facc15, #a16207);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+.card-surface {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+}
